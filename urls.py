@@ -28,6 +28,10 @@ urlpatterns = patterns(
     url(r'^', include('home_application.urls')),
     # 会议管理系统的路由配置
     url(r'^iwork/', include('iwork.urls')),
+    # 磁盘容量查询
+    url(r'^get_capacity/', include('get_capacity.urls')),
+    # API入口
+    url(r'^api/get_capacity/', include('get_capacity.api_urls'))
 )
 
 
